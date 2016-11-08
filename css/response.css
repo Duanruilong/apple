@@ -1,0 +1,274 @@
+/*布局容器*/
+*{
+	box-sizing:border-box;
+}  /*改变盒子模型*/
+	.container{
+		display: block;
+
+		margin: 0 auto;
+	}
+	.container-fluid{
+		display: block;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.container:after,.container-fluid:after{
+		content: "";
+		display: block;
+		line-height: 0;
+		height: 0;
+		clear: both;
+	}
+	.row{
+		display: block;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	/*模糊选择器*/
+	[class*=col-]{
+		display: block;
+		float: left;
+		/*padding-left: 15px;*/
+		/*padding-right: 15px;*/
+	}
+	/*12栅格*/
+/*
+	手机   <768  col-xs-1 ~ col-xs-12
+	*/
+	.col-xs-1{
+		float: left;
+		width: 8.33333%
+	}
+	.col-xs-2{
+		float: left;
+		width: 16.666667%
+	}
+	.col-xs-3{
+		float: left;
+		width: 25%
+	}
+	.col-xs-4{
+		float: left;
+		width: 33.33333%
+	}
+	.col-xs-5{
+		float: left;
+		width: 41.666667%
+	}
+	.col-xs-6{
+		float: left;
+		width: 50%
+	}
+	.col-xs-7{
+		float: left;
+		width: 58.33333%
+	}
+	.col-xs-8{
+		float: left;
+		width: 66.666667%
+	}
+	.col-xs-9{
+		float: left;
+		width:75%
+	}
+	.col-xs-10{
+		float: left;
+		width: 83.33333%
+	}
+	.col-xs-11{
+		float: left;
+		width:91.66667%
+	}
+	.col-xs-12{
+		float: left;
+		width: 100%
+	}
+	.hidden-xs{
+		display: none;
+	}
+	
+
+/*
+	平板   >768  <1000  col-sm-1 ~ col-sm-12
+	*/
+	@media screen and (min-width: 768px) and (max-width: 1000px){
+		.container{
+			width: 730px;
+		}
+		.col-sm-1{
+		float: left;
+		width: 8.33333%
+		}
+		.col-sm-2{
+			float: left;
+			width: 16.666667%
+		}
+		.col-sm-3{
+			float: left;
+			width: 25%
+		}
+		.col-sm-4{
+			float: left;
+			width: 33.33333%
+		}
+		.col-sm-5{
+			float: left;
+			width: 41.666667%
+		}
+		.col-sm-6{
+			float: left;
+			width: 50%
+		}
+		.col-sm-7{
+			float: left;
+			width: 58.33333%
+		}
+		.col-sm-8{
+			float: left;
+			width: 66.666667%
+		}
+		.col-sm-9{
+			float: left;
+			width:75%
+		}
+		.col-sm-10{
+			float: left;
+			width: 83.33333%
+		}
+		.col-sm-11{
+			float: left;
+			width:91.66667%
+		}
+		.col-sm-12{
+			float: left;
+			width: 100%
+		}
+		.hidden-sm{
+			display: none;
+		}
+
+	}
+/*
+	pc小屏   >768  <1000  col-md-1 ~ col-md-12
+	*/
+	@media screen and (min-width: 1000px) and (max-width: 1200px){
+		.container{
+			width: 970px;
+		}
+		.col-md-1{
+		float: left;
+		width: 8.33333%
+		}
+		.col-md-2{
+			float: left;
+			width: 16.666667%
+		}
+		.col-md-3{
+			float: left;
+			width: 25%
+		}
+		.col-md-4{
+			float: left;
+			width: 33.33333%
+		}
+		.col-md-5{
+			float: left;
+			width: 41.666667%
+		}
+		.col-md-6{
+			float: left;
+			width: 50%
+		}
+		.col-md-7{
+			float: left;
+			width: 58.33333%
+		}
+		.col-md-8{
+			float: left;
+			width: 66.666667%
+		}
+		.col-md-9{
+			float: left;
+			width:75%
+		}
+		.col-md-10{
+			float: left;
+			width: 83.33333%
+		}
+		.col-md-11{
+			float: left;
+			width:91.66667%
+		}
+		.col-md-12{
+			float: left;
+			width: 100%
+		}
+		.hidden-md{
+		display: none;
+	}
+
+	}
+
+/*
+	pc大屏   >1200  col-sm-1 ~ col-sm-12
+	*/
+	@media screen and (min-width: 1200px){
+		.container{
+			width:100%;
+		}
+		.col-lg-1{
+		float: left;
+		width: 8.33333%
+		}
+		.col-lg-2{
+			float: left;
+			width: 16.666667%
+		}
+		.col-lg-3{
+			float: left;
+			width: 25%
+		}
+		.col-lg-4{
+			float: left;
+			width: 33.33333%
+		}
+		.col-lg-5{
+			float: left;
+			width: 41.666667%
+		}
+		.col-lg-6{
+			float: left;
+			width: 50%
+		}
+		.col-lg-7{
+			float: left;
+			width: 58.33333%
+		}
+		.col-lg-8{
+			float: left;
+			width: 66.666667%
+		}
+		.col-lg-9{
+			float: left;
+			width:75%
+		}
+		.col-lg-10{
+			float: left;
+			width: 83.33333%
+		}
+		.col-lg-11{
+			float: left;
+			width:91.66667%
+		}
+		.col-lg-12{
+			float: left;
+			width: 100%
+		}
+		.hidden-lg{
+		display: none;
+	}
+
+	}
+
+/*超出隐藏*/
